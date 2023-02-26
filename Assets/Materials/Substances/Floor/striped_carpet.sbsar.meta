@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: c9a44215552112342af2431269a8d6f0
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: dda12f74ff9116a42b23482252b2c482, type: 3}
+  _instancesCopy:
+  - {fileID: 11400000, guid: c2492fa1a114f05469d773abe16a7f78, type: 2}
+  _fileAsset: {instanceID: 0}
+  _assetPath: Assets/Materials/Substances/Floor/striped_carpet.sbsar

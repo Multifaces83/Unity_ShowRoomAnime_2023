@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: d73bc1954d69c274baa45149ffee8445
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: dda12f74ff9116a42b23482252b2c482, type: 3}
+  _instancesCopy:
+  - {fileID: 11400000, guid: cf7823ffd9148df46bb040b102deaf04, type: 2}
+  _fileAsset: {instanceID: 0}
+  _assetPath: Assets/Materials/Substances/Floor/procedural-wooden-floor.sbsar
