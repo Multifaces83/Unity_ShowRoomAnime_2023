@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 62cf4d56e62a0d24d98f7f45acb0f1d2
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: dda12f74ff9116a42b23482252b2c482, type: 3}
+  _instancesCopy:
+  - {fileID: 11400000, guid: 23b775d8aae22324897256b691b76f1b, type: 2}
+  _fileAsset: {instanceID: 0}
+  _assetPath: Assets/Materials/Substances/Ceramic/ceramicflower.sbsar

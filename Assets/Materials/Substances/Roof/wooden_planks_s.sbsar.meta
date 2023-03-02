@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 398782c0cfa68fd419cf11b5333466c4
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: dda12f74ff9116a42b23482252b2c482, type: 3}
+  _instancesCopy:
+  - {fileID: 11400000, guid: c397dbb098cef0f4e8ede8166e25b09c, type: 2}
+  _fileAsset: {instanceID: 0}
+  _assetPath: Assets/Materials/Substances/Roof/wooden_planks_s.sbsar
