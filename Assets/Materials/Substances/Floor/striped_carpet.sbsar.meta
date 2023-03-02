@@ -10,5 +10,7 @@ ScriptedImporter:
   script: {fileID: 11500000, guid: dda12f74ff9116a42b23482252b2c482, type: 3}
   _instancesCopy:
   - {fileID: 11400000, guid: c2492fa1a114f05469d773abe16a7f78, type: 2}
-  _fileAsset: {instanceID: 0}
+  - {fileID: 11400000, guid: 83d1d64ad358fff43a2ed2b9e14c800b, type: 2}
+  _fileAsset: {fileID: 6013892654665635331, guid: c9a44215552112342af2431269a8d6f0,
+    type: 3}
   _assetPath: Assets/Materials/Substances/Floor/striped_carpet.sbsar

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: bf6b301457c204347a2ff825a8bbcefd
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: dda12f74ff9116a42b23482252b2c482, type: 3}
+  _instancesCopy:
+  - {fileID: 11400000, guid: 01bbde52242a395419ec0267e6c17d96, type: 2}
+  - {fileID: 11400000, guid: 1fe734a7e1a9dee4ba48bfb71f9f886a, type: 2}
+  _fileAsset: {fileID: 6013892654665635331, guid: bf6b301457c204347a2ff825a8bbcefd,
+    type: 3}
+  _assetPath: Assets/Materials/Substances/Wall/wood_planks.sbsar

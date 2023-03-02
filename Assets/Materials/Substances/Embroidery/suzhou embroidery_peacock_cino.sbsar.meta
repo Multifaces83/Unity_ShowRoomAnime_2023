@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: e9849221ad937b940a638d019aafeea6
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: dda12f74ff9116a42b23482252b2c482, type: 3}
+  _instancesCopy:
+  - {fileID: 11400000, guid: da0ad8383a77d73449bed416c045d61d, type: 2}
+  - {fileID: 11400000, guid: 49d6767872698854fbdfa863a1235502, type: 2}
+  _fileAsset: {fileID: 6013892654665635331, guid: e9849221ad937b940a638d019aafeea6,
+    type: 3}
+  _assetPath: Assets/Materials/Substances/Embroidery/suzhou embroidery_peacock_cino.sbsar
