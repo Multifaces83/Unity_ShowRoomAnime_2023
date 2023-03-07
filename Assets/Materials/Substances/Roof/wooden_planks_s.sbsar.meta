@@ -10,5 +10,7 @@ ScriptedImporter:
   script: {fileID: 11500000, guid: dda12f74ff9116a42b23482252b2c482, type: 3}
   _instancesCopy:
   - {fileID: 11400000, guid: c397dbb098cef0f4e8ede8166e25b09c, type: 2}
-  _fileAsset: {instanceID: 0}
+  - {fileID: 11400000, guid: 6b7c87d540753e9478c6fd903adeca63, type: 2}
+  _fileAsset: {fileID: 6013892654665635331, guid: 398782c0cfa68fd419cf11b5333466c4,
+    type: 3}
   _assetPath: Assets/Materials/Substances/Roof/wooden_planks_s.sbsar
