@@ -1,0 +1,86 @@
+{
+    "name": "Xbox",
+    "maps": [
+        {
+            "name": "Move",
+            "id": "00ee1144-4247-480d-b327-b981a968a5dc",
+            "actions": [
+                {
+                    "name": "Walk Forward",
+                    "type": "Value",
+                    "id": "45b2ed92-1406-40af-bd46-c323c5a519c7",
+                    "expectedControlType": "Analog",
+                    "processors": "",
+                    "interactions": "Hold",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Slow Run",
+                    "type": "Value",
+                    "id": "2ca99ba2-5092-4e5f-94d2-c3de21a33e3a",
+                    "expectedControlType": "Analog",
+                    "processors": "",
+                    "interactions": "Hold(pressPoint=1)",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "FastRun",
+                    "type": "Button",
+                    "id": "0989bae7-f42b-4302-91e8-2caa6bb0a4c7",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "235f4b54-d1c9-4104-b40d-62b4c3ab1ba4",
+                    "path": "<Gamepad>/leftStick/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Walk Forward",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f8209027-ae24-4f54-b7a1-5014428fbc79",
+                    "path": "<Gamepad>/leftStick/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Slow Run",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5580b79c-b858-4a86-ada7-a8e19a7cf988",
+                    "path": "<Gamepad>/leftStickPress",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "FastRun",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "New control scheme",
+            "bindingGroup": "New control scheme",
+            "devices": [
+                {
+                    "devicePath": "<XInputController>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
