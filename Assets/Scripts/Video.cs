@@ -6,19 +6,26 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class Video : MonoBehaviour
 {
 
-[SerializeField] private GameObject _uiSlider;
-//private GameObject _slider;
+    [SerializeField] private GameObject _uiSlider;
+    [SerializeField] private GameObject _uiVideo;
+    [SerializeField] private Color _alphaColor;
+    [SerializeField] private float _popDelay = 3f;
+    [SerializeField] private float _depopDelay = 2f;
+    private float _count = 0f;
+    //private GameObject _slider;
 
     public void Start()
     {
 
-        gameObject.GetComponent<UnityEngine.Video.VideoPlayer>().SetDirectAudioMute(0, true);        
+        gameObject.GetComponent<UnityEngine.Video.VideoPlayer>().SetDirectAudioMute(0, true);
         //Instantiate(_uiSlider, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity);
         //Instantiate(_uiSlider, gameObject.transform);
 
-        
-    }
 
+    }
+    public void Update()
+    {
+    }
 
 
     public void HoverEnterUnmute()
@@ -41,13 +48,25 @@ public class Video : MonoBehaviour
         gameObject.GetComponent<UnityEngine.Video.VideoPlayer>().Stop();
     }
 
-public void VolumeSlider(){
-    //instanciate scrollbar ui element
-    
+    public void PopMenu()
+    {
+        _count += Time.deltaTime;
+        if (_count <= 0)
+        {
+            _uiVideo.SetActive(true);
+        }
+    }
 
-    //gameObject.GetComponent<UnityEngine.Video.VideoPlayer>().SetDirectAudioVolume(0, 0.5f);
-}
-
+    public void DePopMenu()
+    {
+        //timer
+        _count -= Time.deltaTime;
+        if (_count <= 0)
+        {
+            _uiVideo.SetActive(false);
+            _count = 0f;
+        }
+    }
 }
 
 

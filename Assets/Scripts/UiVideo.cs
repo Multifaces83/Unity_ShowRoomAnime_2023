@@ -101,12 +101,14 @@ public class UiVideo : MonoBehaviour, IDragHandler
         if (eventData.dragging)
         {
             _dragging = true;
+            Debug.Log("Dragging");
         }
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
         _dragging = false;
+        Debug.Log("End Dragging");
     }
 
     private void ConvertTime()
