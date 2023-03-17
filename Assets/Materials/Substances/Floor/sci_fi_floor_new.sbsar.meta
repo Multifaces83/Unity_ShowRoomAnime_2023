@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: bc4550235b6e2304ba59707c13d8cd7b
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: dda12f74ff9116a42b23482252b2c482, type: 3}
+  _instancesCopy:
+  - {fileID: 11400000, guid: a71950fd5e31eb241a1210783b57c9c7, type: 2}
+  - {fileID: 11400000, guid: 8e816d990f409d247946270019d37e5e, type: 2}
+  _fileAsset: {fileID: 6013892654665635331, guid: bc4550235b6e2304ba59707c13d8cd7b,
+    type: 3}
+  _assetPath: Assets/Materials/Substances/Floor/sci_fi_floor_new.sbsar
