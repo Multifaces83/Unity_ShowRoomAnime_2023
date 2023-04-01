@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.UI;
+using TMPro;
 
 [RequireComponent(typeof(DetectionDistance))]
 [RequireComponent(typeof(PatrolAI))]
@@ -20,6 +22,11 @@ public class NoNameAIController : MonoBehaviour
     }
 
     [SerializeField] private Transform _target;
+    [SerializeField] private TMP_Text _npcText;
+    private string _currentText;
+    private float _letterDelay = 0.2f;
+    private int index = 0;
+    [SerializeField] private string[] _textArray;
     private State _state;
     private State _nextState;
     private Animator _animator;
@@ -31,6 +38,10 @@ public class NoNameAIController : MonoBehaviour
 
     void Start()
     {
+        //_npcText.text = "";
+        _npcText.text = _textArray[1];
+        _currentText = _npcText.text;
+        StartCoroutine(TypeText());
 
         _detectionDistance = GetComponent<DetectionDistance>();
         _patrolAI = GetComponent<PatrolAI>();
@@ -40,6 +51,16 @@ public class NoNameAIController : MonoBehaviour
         _state = State.Idle;
         _nextState = _state;
         StartState();
+    }
+
+    IEnumerator TypeText()
+    {
+        while (index < _currentText.Length)
+        {
+            _npcText.text += _currentText[index];
+            index++;
+            yield return new WaitForSeconds(_letterDelay);
+        }
     }
 
     void Update()
@@ -170,6 +191,8 @@ public class NoNameAIController : MonoBehaviour
     }
     private void moveToTarget()
     {
+        //agent set velocity to 0
+        _agent.velocity = Vector3.zero;
         _agent.isStopped = false;
         _agent.SetDestination(_target.position);
         transform.LookAt(_lookAtTarget);
