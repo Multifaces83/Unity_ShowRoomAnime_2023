@@ -24,7 +24,8 @@ public class NoNameAIController : MonoBehaviour
     [SerializeField] private Transform _target;
     [SerializeField] private TMP_Text _npcText;
     private string _currentText;
-    private float _letterDelay = 0.2f;
+    private float _letterDelay = 0.05f;
+    private int _messageCount = 0;
     private int index = 0;
     [SerializeField] private string[] _textArray;
     private State _state;
@@ -39,9 +40,7 @@ public class NoNameAIController : MonoBehaviour
     void Start()
     {
         //_npcText.text = "";
-        _npcText.text = _textArray[1];
-        _currentText = _npcText.text;
-        StartCoroutine(TypeText());
+
 
         _detectionDistance = GetComponent<DetectionDistance>();
         _patrolAI = GetComponent<PatrolAI>();
@@ -53,15 +52,7 @@ public class NoNameAIController : MonoBehaviour
         StartState();
     }
 
-    IEnumerator TypeText()
-    {
-        while (index < _currentText.Length)
-        {
-            _npcText.text += _currentText[index];
-            index++;
-            yield return new WaitForSeconds(_letterDelay);
-        }
-    }
+
 
     void Update()
     {
@@ -173,6 +164,7 @@ public class NoNameAIController : MonoBehaviour
             case State.Patrol:
                 // L'IA patrouille vers des points de patrouille définis
                 _patrolAI.Patrol();
+                ClearTalk();
                 break;
             case State.Talk:
                 // L'IA parle au futur ennemi
@@ -188,6 +180,34 @@ public class NoNameAIController : MonoBehaviour
     private void Talk()
     {
         transform.LookAt(_target);
+
+        if (_messageCount <= _textArray.Length)
+        {
+            _currentText = _textArray[_messageCount];
+            Debug.Log(_messageCount);
+        }
+        else
+        {
+            _messageCount = 0;
+        }
+
+        //_npcText.text = _currentText;
+        StartCoroutine(TypeText());
+        _messageCount++;
+    }
+    IEnumerator TypeText()
+    {
+        while (index < _currentText.Length)
+        {
+            _npcText.text += _currentText[index];
+            index++;
+            yield return new WaitForSeconds(_letterDelay);
+        }
+    }
+    private void ClearTalk()
+    {
+        _npcText.text = "";
+        index = 0;
     }
     private void moveToTarget()
     {
